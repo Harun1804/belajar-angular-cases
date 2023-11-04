@@ -2,6 +2,8 @@
 <hr>
 <div class="row">
   <div class="col-xs-10">
-    The List
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of ingredients">{{ ingredient.name }} <span class="float-end">({{ ingredient.amount }})</span></li>
+    </ul>
   </div>
 </div>
